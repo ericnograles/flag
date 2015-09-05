@@ -2,9 +2,9 @@ var imgUrl = '';
 //$('.fb-welcome, #start-text, #loginbtn, #loadimg, #lower-div').toggle();
 window.fbAsyncInit = function() {
   FB.init({
-    appId: '851549238270521',
-    xfbml: true,
-    version: 'v2.3'
+    appId      : '1488629661430830',
+    xfbml      : true,
+    version    : 'v2.4'
   });
   function onLogin(response) {
     if (response.status == 'connected') {
@@ -51,8 +51,8 @@ function post() {
     "/me/feed",
     "POST",
     {
-        "message": "I just celebrated Independence Day with https://apps.facebook.com/celebratejulyfourth.",
-        "link": "https://apps.facebook.com/celebratejulyfourth"
+        "message": "I support veterans' rights to treating war trauma with cannabis https://apps.facebook.com/cannabisflag.",
+        "link": "https://apps.facebook.com/cannabisflag"
     },
     function (response) {
       if (response && !response.error) {
