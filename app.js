@@ -27,7 +27,7 @@ app.post('/image', function(req, res){
   var tempName = uuid.v1();
   download(postData, tempName + '.jpg', function(){
     var file = tempName + '.jpg';
-    child = exec('composite -gravity center WFWOverlay.jpg[390x^] -geometry +0-0 ' + file + '[390x] -dissolve 18 ' + file,
+    child = exec('composite -gravity center flag-marijuana-leaf-wfw.jpg[390x^] -geometry +0-0 ' + file + '[390x] -dissolve 18 ' + file,
       function (error, stdout, stderr) {
         var filename = path.basename(file);
         var mimetype = mime.lookup(file);
